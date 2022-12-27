@@ -16,6 +16,7 @@ export const ExplanationStyled = styled.p`
 export const TitleStyled = styled.h1`
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
+  color: whitesmoke;
 `;
 
 export const DataStyled = styled.p`
