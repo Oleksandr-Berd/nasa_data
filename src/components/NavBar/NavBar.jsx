@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import * as SC from './NavBar.styled';
 
 export const NavBar = () => {
   const navItem = [
@@ -10,7 +11,7 @@ export const NavBar = () => {
     <nav>
       {navItem.map(({ href, text }) => (
         <Link to={href} key={href}>
-          {text}
+          <SC.NavLinkStyled> {text}</SC.NavLinkStyled>
         </Link>
       ))}
     </nav>

@@ -12,19 +12,24 @@ export const APOD = () => {
     getApod().then(setImage);
   }, []);
 
+  const backgroundImage =
+    'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80';
+
   const { copyright, date, explanation, hdurl, url, title } = image;
   return (
-    <div>
-      <SC.ApodStyled>
-        <h1>{title}</h1>
+    <SC.ContainerApod>
+      <SC.ApodStyled imgUrl={backgroundImage}>
+        <SC.TitleStyled>{title}</SC.TitleStyled>
         <img src={url} alt={title} />
-        <p>{date}</p>
-        <p>{copyright}</p>
-        <SC.ExplanationStyled>{explanation}</SC.ExplanationStyled>
+        <SC.ContainerTextStyled>
+          <SC.DataStyled>{date}</SC.DataStyled>
+          <SC.CopyrightStyled>{copyright}</SC.CopyrightStyled>
+          <SC.ExplanationStyled>{explanation}</SC.ExplanationStyled>
+        </SC.ContainerTextStyled>
+        <Link to="/home" state={{ from: location }}>
+          <SC.ButtonBackApod>Go back</SC.ButtonBackApod>
+        </Link>
       </SC.ApodStyled>
-      <Link to="/home" state={{ from: location }}>
-        Go back
-      </Link>
-    </div>
+    </SC.ContainerApod>
   );
 };
