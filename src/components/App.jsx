@@ -7,10 +7,11 @@ export const App = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<AppBar />}></Route>
-        {/* <Route index element={<Navigate to="/home" />}></Route> */}
-        <Route path="home" element={<Home />} />
-        <Route path="apod" element={<APOD />} />
+        <Route path="/" element={<AppBar />}>
+          <Route index element={<Navigate to="/home" />}></Route>
+          <Route path="home" element={<Home />} />
+          <Route path="apod" element={<APOD />} />
+        </Route>
       </Routes>
     </div>
   );
