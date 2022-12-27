@@ -1,16 +1,17 @@
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { AppBar } from './AppBar/AppBar';
+import { Home } from 'Pages/Home/Home';
+import { APOD } from 'Pages/APOD/APOD';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Routes>
+        <Route path="/" element={<AppBar />}></Route>
+        {/* <Route index element={<Navigate to="/home" />}></Route> */}
+        <Route path="home" element={<Home />} />
+        <Route path="apod" element={<APOD />} />
+      </Routes>
     </div>
   );
 };
