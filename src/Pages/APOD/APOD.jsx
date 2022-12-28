@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { getApod } from 'Utilities/APOD/ApodGet';
 import { Link, useLocation } from 'react-router-dom';
+import { TwitterShareButton, TwitterIcon } from 'react-share';
 import * as SC from './APOD.styled';
 
 export const APOD = () => {
@@ -26,9 +27,14 @@ export const APOD = () => {
           <SC.CopyrightStyled>{copyright}</SC.CopyrightStyled>
           <SC.ExplanationStyled>{explanation}</SC.ExplanationStyled>
         </SC.ContainerTextStyled>
-        <Link to="/home" state={{ from: location }}>
-          <SC.ButtonBackApod>Go back</SC.ButtonBackApod>
-        </Link>
+        <SC.ContainerButtonStyled>
+          <TwitterShareButton url={url}>
+            <TwitterIcon round={true} />
+          </TwitterShareButton>
+          <Link to="/home" state={{ from: location }}>
+            <SC.ButtonBackApod>Go back</SC.ButtonBackApod>
+          </Link>
+        </SC.ContainerButtonStyled>
       </SC.ApodStyled>
     </SC.ContainerApod>
   );

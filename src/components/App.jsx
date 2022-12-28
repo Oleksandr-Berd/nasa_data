@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { AppBar } from './AppBar/AppBar';
 import { Home } from 'Pages/Home/Home';
 import { APOD } from 'Pages/APOD/APOD';
+import { Footer } from './Footer/Footer';
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
           <Route path="apod" element={<APOD />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 };

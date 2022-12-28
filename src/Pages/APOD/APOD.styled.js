@@ -30,8 +30,8 @@ export const ContainerTextStyled = styled.div`
   align-items: flex-end;
 
   width: 925px;
-
-  background: lightblue;
+  font-family: 'Aclonica';
+  background: #afdbf5;
   padding: 20px 20px;
   border-radius: 4px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -46,8 +46,28 @@ export const CopyrightStyled = styled.p`
 
 export const ContainerApod = styled.div`
   padding: 30px 0;
+  border-radius: 4px;
 `;
 
 export const ButtonBackApod = styled.button`
-  padding: 20px;
+  padding: 15px;
+  margin-left: 50px;
+  font-size: 20px;
+  width: 125px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Actor';
+
+  :hover,
+  :focus {
+    background: #89cff0;
+  }
+`;
+
+export const ContainerButtonStyled = styled.div`
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  justify-content: space-around;
+  margin-top: 30px;
 `;
