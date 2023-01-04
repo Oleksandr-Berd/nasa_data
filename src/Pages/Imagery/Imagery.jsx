@@ -29,6 +29,10 @@ export const Imagery = () => {
           </SCF.Label>
           <SCF.ButtonBackImagery>Submit</SCF.ButtonBackImagery>
         </SCF.FormStyled>
+        <SCF.Description>
+          At this page you can retrieve the Landsat 8 image for the supplied
+          location.
+        </SCF.Description>
       </SCF.ContainerForm>
       <SC.ContainerButtonStyled>
         <TwitterShareButton>

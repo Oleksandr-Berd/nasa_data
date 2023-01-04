@@ -54,3 +54,9 @@ export const ButtonBackImagery = styled.button`
     background: #89cff0;
   }
 `;
+
+export const Description = styled.p`
+  color: #fff;
+  font-size: 30px;
+  margin-top: 30px;
+`;
