@@ -3,6 +3,7 @@ import { AppBar } from './AppBar/AppBar';
 import { Home } from 'Pages/Home/Home';
 import { APOD } from 'Pages/APOD/APOD';
 import { Footer } from './Footer/Footer';
+import { Imagery } from 'Pages/Imagery/Imagery';
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
           <Route index element={<Navigate to="/home" />}></Route>
           <Route path="home" element={<Home />} />
           <Route path="apod" element={<APOD />} />
+          <Route path="imagery" element={<Imagery />} />
         </Route>
       </Routes>
       <Footer />

@@ -5,6 +5,7 @@ export const NavBar = () => {
   const navItem = [
     { href: 'home', text: 'Home' },
     { href: 'apod', text: 'A picture of the day' },
+    { href: 'imagery', text: 'The Landsat 8 image for the supplied location' },
   ];
 
   return (
