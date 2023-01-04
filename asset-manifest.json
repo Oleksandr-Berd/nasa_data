@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/nasa_data/static/css/main.7acaea2f.css",
-    "main.js": "/nasa_data/static/js/main.07d3183d.js",
+    "main.js": "/nasa_data/static/js/main.c81350db.js",
     "index.html": "/nasa_data/index.html",
     "main.7acaea2f.css.map": "/nasa_data/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/nasa_data/static/js/main.07d3183d.js.map"
+    "main.c81350db.js.map": "/nasa_data/static/js/main.c81350db.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.c81350db.js"
   ]
 }
