@@ -4,6 +4,7 @@ export const Form = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: ${props => `url(${props.imgUrl})`};
 `;
 
 export const ContainerForm = styled.div`

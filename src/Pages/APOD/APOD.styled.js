@@ -72,4 +72,5 @@ export const ContainerButtonStyled = styled.div`
   width: 1200px;
   justify-content: space-around;
   margin-top: 30px;
+  margin-bottom: 20px;
 `;

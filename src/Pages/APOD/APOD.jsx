@@ -6,6 +6,7 @@ import { TwitterShareButton, TwitterIcon } from 'react-share';
 import * as SC from './APOD.styled';
 import { Dna } from 'react-loader-spinner';
 import { Modal } from 'Pages/Modal/Modal';
+import { background } from '../../Utilities/Images/background';
 
 export const APOD = () => {
   const [image, setImage] = useState('');
@@ -41,7 +42,7 @@ export const APOD = () => {
           wrapperClass="dna-wrapper"
         />
       ) : (
-        <SC.ApodStyled imgUrl={backgroundImage}>
+        <SC.ApodStyled imgUrl={background}>
           <SC.TitleStyled>{title}</SC.TitleStyled>
           <img src={url} alt={title} onClick={toggleModal} />
           <SC.ContainerTextStyled>
