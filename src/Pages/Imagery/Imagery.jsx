@@ -12,8 +12,8 @@ export const Imagery = () => {
   const [imagery, setImagery] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [lat, setLat] = useState('');
-  const [lon, setLon] = useState('');
+  const [lat, setLat] = useState(1.5);
+  const [lon, setLon] = useState(100.75);
   const [dim, setDim] = useState('');
   const [query, setQuery] = useState([]);
 
