@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavLinkStyled = styled.span`
-  color: whitesmoke;
+  color: black;
   font-size: 30px;
   margin-right: 30px;
   text-decoration: none;
